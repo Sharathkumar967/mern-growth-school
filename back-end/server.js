@@ -4,7 +4,6 @@ const colors = require("colors");
 const morgan = require("morgan");
 const cors = require("cors");
 const connectDB = require("./config/db");
-const { registerController } = require("./controllers/authController");
 
 // dot config
 dotenv.config();
@@ -21,6 +20,7 @@ app.use(morgan("dev"));
 // routes
 
 app.use("/api/v1/auth", require("./routes/authRoutes"));
+app.use("/api/v1/courses", require("./routes/courseRoutes"));
 
 //port
 const PORT = process.env.PORT || 8080;

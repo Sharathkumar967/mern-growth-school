@@ -1,0 +1,14 @@
+.header {
+  background: #fdf0e9;
+  padding: 0px 130px;
+}
+
+.course-page {
+  padding: 0px 130px;
+  margin-top: 50px;
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
